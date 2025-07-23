@@ -15,7 +15,6 @@ export default function GuidesContent({ category }: { category: CategoryKey }) {
       <p className="text-gray-600  max-w-2xl mb-5">
         {categoryData.description}
       </p>
-      {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
         {categoryData.items.map((item, index) => (
           <GuidesCard key={index} {...item} />

@@ -9,12 +9,10 @@ export default function GuidesPage() {
   return (
     <div className="min-h-screen">
       <div className="flex flex-col lg:flex-row max-w-[1100px] mx-auto w-full pt-[100px]">
-        {/* Sidebar */}
         <div className="lg:w-64 w-full ">
           <GuidesTabs selectedCategory="" />
         </div>
 
-        {/* Content */}
         <div className="flex-1 p-6">
           <h1 className="text-3xl font-bold mb-8">
             Business, Marketing, and Branding Guides
@@ -28,7 +26,6 @@ export default function GuidesPage() {
             copy, and more!
           </p>
 
-          {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {allGuides.map((item, index) => (
               <GuidesCard key={index} {...item} />
